@@ -26,3 +26,25 @@ class App extends Component {
 }
 
 export default App;
+
+
+export const add = (x, y) => {
+  return x + y;
+};
+
+export const total = (shipping, subtotal) => {
+  return '$'+ add(shipping, subtotal);
+};
+
+export const getUserName = (userName) => {
+return userName;
+};
+
+export const getUserFullName = (firstName, lastName) => {
+
+const userfullName= [];
+userfullName.push(firstName)
+userfullName.push(lastName)
+
+  return userfullName;
+  };
