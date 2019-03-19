@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme'
 import ReactDOM from 'react-dom';
-import App from './App';
-import { total, getUserName, getUserFullName } from './App';
-import logo from './logo.svg';
+import App from '../App';
+import { total, getUserName, getUserFullName } from '../App';
+import logo from '../logo.svg';
 
 
 test('Test1:renders without crashing', () => {
@@ -50,13 +50,13 @@ const add = jest.fn(() => 3);
 
 //Unit Test
 test('Test4:add function test with const', () => {
-
   const numero = 1;
   const value = add(numero, 2);
   expect(value).toBe(3);
   expect(add).toHaveBeenCalledTimes(1);
   expect(add).toHaveBeenCalledWith(1, 2);
 });
+
 //Unit Test
 test('Test5:add function test without const', () => {
   expect(add(1, 1)).toBe(3);
