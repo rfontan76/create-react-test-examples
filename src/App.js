@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="/logo.svg" className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
@@ -27,24 +26,22 @@ class App extends Component {
 
 export default App;
 
-
 export const add = (x, y) => {
   return x + y;
 };
 
 export const total = (shipping, subtotal) => {
-  return '$'+ add(shipping, subtotal);
+  return "$" + add(shipping, subtotal);
 };
 
-export const getUserName = (userName) => {
-return userName;
+export const getUserName = userName => {
+  return userName;
 };
 
 export const getUserFullName = (firstName, lastName) => {
-
-const userfullName= [];
-userfullName.push(firstName)
-userfullName.push(lastName)
+  const userfullName = [];
+  userfullName.push(firstName);
+  userfullName.push(lastName);
 
   return userfullName;
-  };
+};
