@@ -3,7 +3,7 @@ import { shallow, mount, render } from 'enzyme'
 import ReactDOM from 'react-dom';
 import App from './App';
 import { total, getUserName, getUserFullName } from './App';
-import logo from '../logo.svg';
+import logo from './logo.svg';
 
 
 test('Test1:renders without crashing', () => {
