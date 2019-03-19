@@ -3,7 +3,6 @@ import { shallow, mount, render } from "enzyme";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { total, getUserName, getUserFullName } from "./App";
-import logo from "../public/logo.svg";
 
 test("Test1:renders without crashing", () => {
   const div = document.createElement("div");
@@ -22,7 +21,7 @@ test("Test3:renders header", () => {
   const wrapper = shallow(<App />);
   const welcome = (
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src="/logo.svg" className="App-logo" alt="logo" />
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
