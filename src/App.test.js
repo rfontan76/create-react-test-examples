@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount, render } from 'enzyme'
 import ReactDOM from 'react-dom';
-import App from '../App';
-import { total, getUserName, getUserFullName } from '../App';
+import App from './App';
+import { total, getUserName, getUserFullName } from './App';
 import logo from '../logo.svg';
 
 
